@@ -4,18 +4,31 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/images/logos/footer-logo.png';
 
-const Footer = (props) => {
-  const { footerLogo, footerClass } = props;
+const FooterTwo = (props) => {
+  const { footerLogo, footerClass, ctaSubtitle, ctaTitle, ctaBtn } = props;
   return (
     <>
-      <footer id="react-footer" className={footerClass ? footerClass : 'react-footer home-main'}>
+      <footer id="react-footer" className={footerClass ? footerClass : 'react-footer react-footer-two pt---120'}>
         <div className="footer-top">
+          <div className="container">
+            <div className="footer-top-cta wow animate__fadeInUp" data-wow-duration="0.6s">
+              <div className="row">
+                <div className="col-lg-7">
+                  <h4>{ctaSubtitle ? ctaSubtitle : 'Free Online Course'}</h4>
+                  <h3>{ctaTitle ? ctaTitle : 'Ready to dive in? Start your free Course today.'}</h3>
+                </div>
+                <div className="col-lg-5 text-right">
+                  <Link to="#">{ctaBtn ? ctaBtn : 'Go To FAQ'} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></Link>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-lg-3 md-mb-30">
                 <div className="footer-widget footer-widget-1">
                   <div className="footer-logo white">
-                    <Link to="/" className="logo-text"><img src={footerLogo ? footerLogo : Logo} alt="Footer Logo" /></Link>
+                    <Link to="index.html" className="logo-text"> <img src={footerLogo ? footerLogo : Logo} alt="logo" /></Link>
                   </div>
                   <h5 className="footer-subtitle">There are course and event custom <br />
                     post types so you can easily create and<br /> manage course, events.</h5>
@@ -48,7 +61,7 @@ const Footer = (props) => {
                       <li><Link to="#">Browse Library</Link></li>
                       <li><Link to="#">Library</Link></li>
                       <li><Link to="#">Partners</Link></li>
-                      <li><Link to="/blog">News & Blog</Link></li>
+                      <li><Link to="/blog">News &amp; Blog</Link></li>
                       <li><Link to="#">FAQ</Link></li>
                       <li><Link to="#">Tutorials</Link></li>
                     </ul>
@@ -91,4 +104,4 @@ const Footer = (props) => {
   );
 }
 
-export default Footer;
+export default FooterTwo;

@@ -8,14 +8,14 @@ import footerLogo from '../../assets/images/logos/footer-logo.png';
 const HomePage = () => {
   return (
     <>
-      {/* <Header
+      <Header
         parentMenu='home'
         topbarEnable='enable'
-      /> */}
+      />
       <HomeMain />
-      {/* <Footer
+      <Footer
         footerLogo={footerLogo}
-      /> */}
+      />
     </>
   );
 }
