@@ -3,25 +3,25 @@ import { Route, Routes } from 'react-router-dom';
 import PreLoader from "./components/Preloader";
 
 import LoadTop from './components/ScrollTop/LoadTop';
-import Error from './pages/404';
-import About from './pages/about';
-import Login from './pages/authentication/login';
-import Signup from './pages/authentication/signup';
-import Blog from './pages/blog';
-import BlogDetails from './pages/blog/blog-details';
-import Contact from './pages/contact';
-import Course from './pages/course';
-import CourseDetails from './pages/course/course-details';
-import CourseList from './pages/course/course-list';
-import CourseSidebar from './pages/course/course-sidebar';
-import Event from './pages/event';
-import EventDetails from './pages/event/event-details';
-import EventSidebar from './pages/event/event-sidebar';
+// import Error from './pages/404';
+// import About from './pages/about';
+// import Login from './pages/authentication/login';
+// import Signup from './pages/authentication/signup';
+// import Blog from './pages/blog';
+// import BlogDetails from './pages/blog/blog-details';
+// import Contact from './pages/contact';
+// import Course from './pages/course';
+// import CourseDetails from './pages/course/course-details';
+// import CourseList from './pages/course/course-list';
+// import CourseSidebar from './pages/course/course-sidebar';
+// import Event from './pages/event';
+// import EventDetails from './pages/event/event-details';
+// import EventSidebar from './pages/event/event-sidebar';
 import Home from './pages/home';
-import HomeTwo from './pages/home-2';
-import HomeThree from './pages/home-3';
-import Instructor from './pages/instructor';
-import InstructorDetails from './pages/instructor/instructor-details';
+// import HomeTwo from './pages/home-2';
+// import HomeThree from './pages/home-3';
+// import Instructor from './pages/instructor';
+// import InstructorDetails from './pages/instructor/instructor-details';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +40,7 @@ export default function App() {
         <LoadTop />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/home-2" element={<HomeTwo />} />
+          {/* <Route path="/home-2" element={<HomeTwo />} />
           <Route path="/home-3" element={<HomeThree />} />
           <Route path="/about" element={<About />} />
           <Route path="/course" exact element={<Course />} />
@@ -57,7 +57,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path='*' element={<Error />} />
+          <Route path='*' element={<Error />} /> */}
         </Routes>
       </>
     </div>
